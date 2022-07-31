@@ -1,3 +1,31 @@
+# graphite-docker-grafana-statsd-carbon-cache
+
+# 🚀 An all-in-one image running graphite and carbon-cache 🚀
+
+https://github.com/coding-to-music/graphite-docker-grafana-statsd-carbon-cache
+
+From / By https://github.com/SamSaffron
+
+https://github.com/SamSaffron/graphite_docker
+
+## Environment variables:
+
+```java
+
+```
+
+## GitHub
+
+```java
+git init
+git add .
+git remote remove origin
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:coding-to-music/graphite-docker-grafana-statsd-carbon-cache.git
+git push -u origin main
+```
+
 ## Graphite + Carbon + Statsd + Grafana
 
 An all-in-one image running graphite and carbon-cache.
@@ -13,7 +41,6 @@ carbon-cache and grafana. Starting this container will expose following ports:
 - `8125`: the statsd UDP port
 - `8126`: the statsd management port
 
-
 You can log into the administrative interface of graphite-web (a Django
 application) with the username `admin` and password `admin`. These passwords can
 be changed through the web interface.
@@ -24,7 +51,6 @@ accessible from anywhere if the host firewall is unconfigured.
 ### Data volumes
 
 All data is stored in the /data folder in the container (graphite metrics and grafana db)
-
 
     docker run -v /data/graphite:/data \
                -e SECRET_KEY='random-secret-key' \
@@ -51,7 +77,6 @@ Use `STATSD_IPV6=1` to boot statsd with IPv6 support, by default it only binds t
 ### Getting started
 
 Generate your SECRET_KEY from [here](http://www.miniwebtool.com/django-secret-key-generator/). It is optional but highly recommended.
-
 
 ### Based off
 
